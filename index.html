@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOKOA</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div>
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div><span>18:43</span></div>
+      <div>
+        <i class="fas fa-lock"></i>
+        <span>11%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="index-header">
+      <p class="index-title">Welcome to kokoaTalk</p>
+      <p class="index-text">
+        If you have a kokoa Account, login in your email or phone number
+      </p>
+    </header>
+
+    <form class="index-form" action="friends.html">
+      <input type="text" placeholder="Email or phone number" />
+      <input type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <a href="friends.html">Find Kokoa Account or Password</a>
+    </form>
+    <div id="no-mobile">
+      <span>화면을 줄여주세요!</span>
+    </div>
+  </body>
+</html>

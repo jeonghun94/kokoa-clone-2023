@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.header__title {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.header__icone i {
+  margin: 0 10px;
+}

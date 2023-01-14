@@ -12,38 +12,44 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://jeonghun94.github.io/kokoa-clone-2020/css/style.css"
-    />
+    /> -->
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <div class="status-bar">
-      <div>
-        <span>No Service</span>
-        <i class="fas fa-wifi"></i>
-      </div>
       <div><span>18:43</span></div>
-      <div>
-        <i class="fas fa-lock"></i>
-        <span>11%</span>
+      <div class="status-bar notch">
+        <div class="faceid"></div>
+        <div class="speaker"></div>
+        <div class="camera"></div>
+      </div>
+      <div style="display: flex; gap: 10px">
+        <i class="fas fa-wifi"></i>
+        <span>77%</span>
         <i class="fas fa-battery-three-quarters"></i>
-        <i class="fas fa-bolt"></i>
       </div>
     </div>
 
     <header class="index-header">
-      <p class="index-title">Welcome to kokoaTalk</p>
+      <p class="index-title">카카오톡을 시작합니다</p>
       <p class="index-text">
-        If you have a kokoa Account, login in your email or phone number
+        사용하던 카카오계정이 있다면
+        <br />
+        이메일 또는 전화번호로 로그인하세요.
       </p>
     </header>
 
     <form class="index-form" action="friends.html">
-      <input type="text" placeholder="Email or phone number" />
-      <input type="password" placeholder="Password" />
-      <input type="submit" value="Log In" />
-      <a href="friends.html">Find Kokoa Account or Password</a>
+      <input type="text" placeholder="이메일 또는 전화번호" />
+      <input type="password" placeholder="비밀번호" />
+      <br />
+      <br />
+      <input type="submit" value="카카오계정 로그인" />
+      <input type="submit" value="새로운 카카오계정 만들기" />
+      <a href="friends.html">카카오계정 또는 비밀번호 찾기</a>
     </form>
     <div id="no-mobile">
       <span>화면을 줄여주세요!</span>

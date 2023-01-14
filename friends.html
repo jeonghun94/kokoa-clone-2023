@@ -16,21 +16,23 @@
   </head>
   <body>
     <div class="status-bar">
-      <div>
-        <span>No Service</span>
-        <i class="fas fa-wifi"></i>
+      <div><span>12:45</span></div>
+      <div class="status-bar notch">
+        <div class="faceid"></div>
+        <div class="speaker"></div>
+        <div class="camera"></div>
       </div>
-      <div><span>18:43</span></div>
-      <div>
-        <i class="fas fa-lock"></i>
-        <span>11%</span>
+      <div style="display: flex; gap: 10px">
+        <i class="fas fa-wifi"></i>
+        <span>77%</span>
         <i class="fas fa-battery-three-quarters"></i>
-        <i class="fas fa-bolt"></i>
       </div>
     </div>
 
     <header class="header">
-      <div class="header__title"><span>Friends</span></div>
+      <div class="header__title">
+        <span>친구</span>
+      </div>
       <div class="header__icone">
         <i class="fas fa-search"></i>
         <i class="fas fa-music"></i>
@@ -39,38 +41,167 @@
     </header>
 
     <div class="friends-display">
-      <i class="fas fa-exclamation-circle"></i>
-      Friends' Names Display
-      <i class="fas fa-chevron-right"></i>
+      <img
+        src="./img/ad2.jpeg"
+        alt="ad"
+        style="width: 95%; height: 75px; border-radius: 10px"
+      />
     </div>
 
     <main>
       <div class="friends-component">
         <div class="friends-column">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3UZcLLScOuBWC0aSW8KMYRB2YYO2ZAPOZuA&usqp=CAU"
-            class="friends-img"
-          />
+          <img src="./img/me.jpeg" class="friends-img" />
           <div class="friends-text">
-            <h4 class="friends-title">김민주</h4>
+            <h4 class="friends-title">조정훈</h4>
           </div>
         </div>
         <div class="friends-column"></div>
       </div>
       <div class="friends-channel">
-        <span>Channel</span>
+        <span>내 멀티프로필 1</span>
         <i class="fas fa-chevron-up"></i>
       </div>
       <div class="friends-channel__info">
-        <div class="friends-channel__info-left">
-          <img
-            src="data:image/jpeg;base64,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"
-          />
-          <span>Channel</span>
+        <div class="muliti-profile">
+          <img src="./img/me.jpeg" />
+          <span>조정훈</span>
         </div>
-        <div class="friends-channel__info-right">
-          <span>2</span>
-          <i class="fas fa-chevron-right"></i>
+        <div class="muliti-profile">
+          <div>
+            <span style="font-size: 18px; font: 0.8em sans-serif">
+              <i class="fas fa-plus"></i>
+            </span>
+          </div>
+          <span>만들기</span>
+        </div>
+      </div>
+      <div style="margin: 10px 0px -10px 0">
+        <div class="friends-channel">
+          <span>생일인 친구</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+      <div style="margin: 10px 0px 0px 0">
+        <div class="friends-channel">
+          <span>업데이트한 친구 3</span>
+          <i class="fas fa-chevron-up"></i>
+        </div>
+      </div>
+      <div class="friends-channel__info">
+        <div class="muliti-profile">
+          <div class="update"></div>
+          <img
+            src="https://search.pstatic.net/common?type=f&size=206x232&quality=75&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20221230_268%2F1672365993093fNWnA_JPEG%2Faa9117f509dbe92050264c86f9777d06.jpg"
+          />
+          <span>문동은</span>
+        </div>
+        <div class="muliti-profile">
+          <div class="update"></div>
+          <img
+            src="https://search.pstatic.net/common?type=f&size=206x232&quality=75&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20221230_146%2F1672366031173CJ9LH_JPEG%2Fb0f751e69a1bbdfc26c6a21d2139031a.jpg"
+          />
+          <span>박연진</span>
+        </div>
+        <div class="muliti-profile">
+          <div class="update"></div>
+          <img
+            src="https://search.pstatic.net/common?type=f&size=206x232&quality=75&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20221230_67%2F1672365736349HmMl6_JPEG%2F35b9fe8d13f24c595320e02e6421f7fe.jpg"
+          />
+          <span>전재준</span>
+        </div>
+      </div>
+      <div style="margin: 10px 0px -10px 0">
+        <div class="friends-channel">
+          <span>즐겨찾기</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+      <div style="margin: 10px 0px -10px 0">
+        <div class="friends-channel">
+          <span>채널</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+      <div style="margin: 10px 0px -10px 0">
+        <div class="friends-channel">
+          <span>친구 5</span>
+          <i class="fas fa-chevron-up"></i>
+        </div>
+      </div>
+      <div class="friends-channel__info">
+        <div
+          class="muliti-profile row"
+          style="display: flex; flex-direction: row"
+        >
+          <img
+            class="plus"
+            src="https://search.pstatic.net/common?type=f&size=206x232&quality=75&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20221230_268%2F1672365993093fNWnA_JPEG%2Faa9117f509dbe92050264c86f9777d06.jpg"
+          />
+          <p class="friends">
+            <span class="name">문동은</span>
+            <span class="message">복수할거야 연진아</span>
+          </p>
+        </div>
+      </div>
+      <div class="friends-channel__info">
+        <div
+          class="muliti-profile row"
+          style="display: flex; flex-direction: row"
+        >
+          <img
+            class="plus"
+            src="https://search.pstatic.net/common?type=f&size=206x232&quality=75&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20221230_146%2F1672366031173CJ9LH_JPEG%2Fb0f751e69a1bbdfc26c6a21d2139031a.jpg"
+          />
+          <p class="friends">
+            <span class="name">박연진</span>
+            <span class="message">고데기 온도좀 체크해줘</span>
+          </p>
+        </div>
+      </div>
+      <div class="friends-channel__info">
+        <div
+          class="muliti-profile row"
+          style="display: flex; flex-direction: row"
+        >
+          <img
+            class="plus"
+            src="https://search.pstatic.net/common?type=f&size=206x232&quality=75&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20221230_67%2F1672365736349HmMl6_JPEG%2F35b9fe8d13f24c595320e02e6421f7fe.jpg"
+          />
+          <p class="friends">
+            <span class="name">전재준</span>
+            <span class="message">예솔이는 내 딸이야</span>
+          </p>
+        </div>
+      </div>
+      <div class="friends-channel__info">
+        <div
+          class="muliti-profile row"
+          style="display: flex; flex-direction: row"
+        >
+          <img
+            class="plus"
+            src="https://search.pstatic.net/common?type=f&size=206x232&quality=75&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20221230_23%2F16723658206478RNX4_JPEG%2Fdfa5ded87515d25963219ca8b2c2f577.jpg"
+          />
+          <p class="friends">
+            <span class="name">이사라</span>
+            <span class="message">가만안둬 문동은!!!</span>
+          </p>
+        </div>
+      </div>
+      <div class="friends-channel__info">
+        <div
+          class="muliti-profile row"
+          style="display: flex; flex-direction: row"
+        >
+          <img
+            class="plus"
+            src="https://search.pstatic.net/common?type=f&size=206x232&quality=75&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20221230_64%2F1672366103334gA3XP_JPEG%2Fea8178bace65f562b3c8356f29675081.jpg"
+          />
+          <p class="friends">
+            <span class="name">손명오</span>
+            <span class="message">☠️</span>
+          </p>
         </div>
       </div>
     </main>

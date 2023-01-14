@@ -1,8 +1,52 @@
+/* body {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  /* border: 8px solid black; */
+  height: 100vh;
+}
+
 .status-bar {
+  display: grid;
+  grid-template-columns: 50px 250px 80px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  gap: 20px;
+}
+.status-bar .notch {
+  /* width: 200px; */
+  height: 35px;
+  background-color: black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 5px;
+  padding: 0 20px;
+}
+
+.camera,
+.faceid {
+  border-radius: 100%;
+  background-color: #000033;
+  width: 18px;
+  height: 18px;
+}
+
+.camera {
+  width: 15px;
+  height: 15px;
+  background-color: #00004d;
+}
+
+.speaker {
+  width: 100px;
+  height: 10px;
+  background-color: #14141f;
+  border-radius: 5px;
 }
 
 .index-header {
@@ -27,7 +71,7 @@
 }
 
 .index-title {
-  font-size: 25px;
+  font-size: 24px;
   margin: 20px 0;
   font-weight: 400;
 }
@@ -35,7 +79,8 @@
 .index-text {
   margin: 10px 0;
   text-align: center;
-  opacity: 0.8;
+  font-size: 14px;
+  color: lightgray;
 }
 
 .index-form {
@@ -55,13 +100,14 @@
 }
 
 .index-form input[type="submit"] {
-  background-color: var(--bg);
+  background-color: #f0f0f5;
+  padding: 15px;
   border: 0;
   cursor: pointer;
-  border-radius: 10px;
-  font-weight: 600;
+  border-radius: 4px;
   font-size: 15px;
-  margin: 20px;
+  margin: 5px 20px;
+  opacity: 0.8;
 }
 
 .index-form input:focus {
@@ -70,12 +116,15 @@
 
 .index-form a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   color: black;
+  opacity: 0.8;
+  margin: 10px 0;
 }
 
 .index-form input::placeholder {
   color: rgba(0, 0, 0, 0.4);
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.8;
 }

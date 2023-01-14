@@ -6,10 +6,10 @@
 }
 
 .header__title {
-  font-weight: 600;
-  font-size: 25px;
+  font-weight: 500;
+  font-size: 21px;
 }
 
 .header__icone i {
-  margin: 0 10px;
+  margin: 0 8px;
 }

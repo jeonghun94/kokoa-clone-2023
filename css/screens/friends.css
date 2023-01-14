@@ -1,3 +1,7 @@
+body {
+  margin-bottom: 70px;
+}
+
 .friends-header {
   display: flex;
   justify-content: space-between;
@@ -16,8 +20,6 @@
 
 .friends-display {
   text-align: center;
-  background-color: #fafafa;
-  padding: 10px 0;
 }
 
 .friends-display i {
@@ -50,7 +52,7 @@
   display: flex;
   justify-content: space-between;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   margin: 0 20px;
   opacity: 0.4;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -59,9 +61,8 @@
 
 .friends-channel__info {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin: 0 20px;
+  padding: 0px 10px;
 }
 
 .friends-channel__info-left {
@@ -75,7 +76,8 @@
   margin-left: 10px;
 }
 
-.friends-channel__info-left img {
+.friends-channel__info-left img,
+.muliti-profile img {
   border-radius: 10px;
   height: 30px;
   width: 30px;
@@ -84,6 +86,62 @@
 .friends-channel__info-right {
   font-size: 13px;
   opacity: 0.3;
+}
+
+.muliti-profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: gray;
+  margin: 0px 10px;
+  gap: 7px;
+}
+
+.muliti-profile .update {
+  position: absolute;
+  left: -5px;
+  width: 5px;
+  height: 5px;
+  background-color: tomato;
+}
+
+.muliti-profile .friends {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin: 15px 0;
+}
+
+.muliti-profile .friends .name {
+  font-size: 12px;
+}
+.muliti-profile .friends .message {
+  font-size: 10.5px;
+  opacity: 0.5;
+}
+
+.muliti-profile span {
+  font-size: 10px;
+  font-weight: 500;
+}
+.muliti-profile .plus {
+  width: 38px;
+  height: 38px;
+  border-radius: 14px;
+}
+
+.muliti-profile div {
+  background-color: gainsboro;
+  border-radius: 10px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  opacity: 0.8;
+  font-weight: 100;
 }
 
 @keyframes hideSplash {

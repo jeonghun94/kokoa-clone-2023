@@ -10,8 +10,72 @@
 
 .more-component {
   display: flex;
+  align-items: center;
+}
+
+.more-component .container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  background-color: #f9e000;
+  width: 100%;
+  height: 200px;
+  padding: 5px 30px;
+}
+
+.more-component .header {
+  width: 100%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.more-component .header h1 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.more-component .header h3 {
+  font-size: 14px;
+}
+
+.more-component .imoticon {
+  width: 100%;
+  background-color: #ffffe6;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.more-component .small-bold {
+  font-size: 16px;
+  font-weight: 00;
+}
+
+.more-component .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.more-component .bottom div:first-child {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.more-component .bottom div:last-child {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 2px;
 }
 
 .more-column {
@@ -59,9 +123,9 @@
   margin: 15px 0;
 }
 .more-suggestions {
-  margin: 20px;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-  padding: 20px 0;
+  margin: 20px 0px;
+  /* border-top: 1px solid rgba(0, 0, 0, 0.05); */
+  padding: 10px 0;
 }
 
 .more-suggestions__title {
@@ -69,7 +133,10 @@
 }
 
 .more-suggestions__icons {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 15px;
+  padding: 0px 10px;
 }
 
 .more-suggestions__title {
@@ -87,7 +154,7 @@
   width: 45px;
   height: 45px;
   border-radius: 10px;
-  background-color: var(--bg);
+  /* background-color: var(--bg); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,9 +162,20 @@
 }
 .more-suggestions__icon-text {
   opacity: 0.5;
-  font-size: 13px;
+  font-size: 12px;
 }
 .more-suggestions__icon-image i {
-  font-size: 20px;
-  color: white;
+  font-size: 24px;
+  /* color: white; */
+}
+
+.more-ad__container {
+  width: 100%;
+  height: 100px;
+  padding: 5px 0px;
+}
+
+.more-ad__container img {
+  width: 100%;
+  height: 200px;
 }

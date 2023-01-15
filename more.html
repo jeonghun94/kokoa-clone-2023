@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KOKOA</title>
+    <title>KokoaTalk</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
-    />
+    /> -->
+    <script
+      src="https://kit.fontawesome.com/88fb375133.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- <link rel="stylesheet" href="https://jeonghun94.github.io/kokoa-clone-2020/css/style.css" /> -->
     <link rel="stylesheet" href="/css/style.css" />
   </head>
@@ -33,71 +37,148 @@
     </div>
 
     <header class="header">
-      <div class="header__title"><span>More</span></div>
+      <div class="header__title"><span>더보기</span></div>
       <div class="header__icone">
         <i class="fas fa-search"></i>
-        <i class="fas fa-music"></i>
+        <i class="fas fa-qrcode"></i>
         <a href="setting.html"><i class="fas fa-cog"></i></a>
       </div>
     </header>
 
     <main>
       <div class="more-component">
-        <div class="more-column">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3UZcLLScOuBWC0aSW8KMYRB2YYO2ZAPOZuA&usqp=CAU"
-            class="more-img"
-          />
-          <div class="more-text">
-            <h4 class="more-title">KimMinJu</h4>
-            <h6>+1 787-493-4219<i class="fas fa-exclamation-circle"></i></h6>
+        <div class="more-component container">
+          <div class="header">
+            <h1>
+              지갑<i class="fas fa-chevron-right" style="font-size: medium"></i>
+            </h1>
+            <h3><i class="fas fa-shield-alt"></i> 인증서</h3>
           </div>
-        </div>
-        <div class="more-column">
-          <i class="far fa-envelope-open"></i>
-        </div>
-      </div>
-
-      <div class="icon-row">
-        <div class="icon-row__icon">
-          <i class="far fa-calendar"></i>
-          <span>Calendar</span>
-        </div>
-        <div class="icon-row__icon">
-          <i class="far fa-smile-beam"></i>
-          <span>Emoticons</span>
-        </div>
-        <div class="icon-row__icon">
-          <i class="fas fa-paint-roller"></i>
-          <span>Themes</span>
-        </div>
-        <div class="icon-row__icon">
-          <i class="fas fa-file-invoice-dollar"></i>
-          <span>Account</span>
+          <div class="imoticon">🥹 이모티콘 플러스 다시 이용하기</div>
+          <div class="header">
+            <h1 style="font-size: 16px; font-weight: 700">
+              <i class="fas fa-comment"></i>pay
+            </h1>
+            <h3>0원</h3>
+          </div>
+          <div class="bottom">
+            <div>
+              <span>송금</span>
+              <span>결제</span>
+              <span>자산</span>
+            </div>
+            <div>구매내역</div>
+          </div>
         </div>
       </div>
 
       <div class="more-suggestions">
-        <h4 class="more-suggestions__title">Suggestions</h4>
         <div class="more-suggestions__icons">
           <div class="more-suggestions__icon">
             <div class="more-suggestions__icon-image">
-              <i class="fas fa-quote-right"></i>
+              <i class="fas fa-gifts"></i>
             </div>
-            <span class="more-suggestions__icon-text">Kokoa story</span>
+            <span class="more-suggestions__icon-text">선물하기</span>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-heart"></i>
+            </div>
+            <span class="more-suggestions__icon-text">받은선물</span>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-hand-holding-heart"></i>
+            </div>
+            <span class="more-suggestions__icon-text">설날선물전</span>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-laugh-wink"></i>
+            </div>
+            <span class="more-suggestions__icon-text">이모티콘</span>
+          </div>
+        </div>
+        <div class="more-suggestions__icons">
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-shopping-bag"></i>
+            </div>
+            <span class="more-suggestions__icon-text">쇼핑하기</span>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-bookmark"></i>
+            </div>
+            <span class="more-suggestions__icon-text">메이커스</span>
           </div>
           <div class="more-suggestions__icon">
             <div class="more-suggestions__icon-image">
               <i class="fas fa-user-friends"></i>
             </div>
-            <span class="more-suggestions__icon-text">Kokoa friends</span>
+            <span class="more-suggestions__icon-text">프렌즈</span>
           </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-tshirt"></i>
+            </div>
+            <span class="more-suggestions__icon-text">패션</span>
+          </div>
+        </div>
+        <div class="more-suggestions__icons">
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <span class="more-suggestions__icon-text">톡서랍</span>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <span class="more-suggestions__icon-text">메일</span>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-calendar-check"></i>
+            </div>
+            <span class="more-suggestions__icon-text">캘린더</span>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-comments"></i>
+            </div>
+            <span class="more-suggestions__icon-text">오픈채팅</span>
+          </div>
+        </div>
+        <div class="more-suggestions__icons">
           <div class="more-suggestions__icon">
             <div class="more-suggestions__icon-image">
               <i class="fas fa-gamepad"></i>
             </div>
-            <span class="more-suggestions__icon-text">Kokoa game</span>
+            <span class="more-suggestions__icon-text">게임</span>
           </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <span class="more-suggestions__icon-text">주문하기</span>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-ticket-alt"></i>
+            </div>
+            <span class="more-suggestions__icon-text">멜론티켓</span>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-border-all"></i>
+            </div>
+            <span class="more-suggestions__icon-text">전체서비스</span>
+          </div>
+        </div>
+        <div class="more-ad__container">
+          <img src="./img/ad3.jpeg" alt="" srcset="" />
         </div>
       </div>
     </main>
@@ -111,7 +192,7 @@
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chat.html">
-            <span class="nav__notification">5</span>
+            <span class="nav__notification">1</span>
             <i class="far fa-comment"></i>
           </a>
         </li>
